@@ -1,0 +1,122 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);;
+
+body{
+    background: black;
+    margin: 0px;
+}
+/* NAVIGATION BAR */
+#navbar{
+    background-color: black;
+    color: grey;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+#navbar #list1{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+#navbar #list1 li,#list2 li{
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    padding: 8px;
+    list-style: none;
+    transition: all 1ms;
+}
+#navbar #list1 li,#list2 li:hover{
+    cursor: pointer;
+}
+#navbar #list2{
+    display: flex;
+    flex-wrap: nowrap;
+}
+#navbar #list2 li{
+    color: #E30175;
+    justify-content: space-between;
+    border: 1.5px solid #E30175;
+    border-radius: 30px;
+}
+
+/* Form Container */
+.form-container {
+    font-family: Roboto, sans-serif;
+    background: white;
+    max-width: 600px;
+    position: relative;
+    left: 30%;
+    display: flex;
+    flex-direction:column;
+    /* justify-content: center; */
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #E30175;
+  margin-bottom: 20px;
+}
+
+form fieldset {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+
+legend {
+  font-weight: bold;
+  color: #333;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="number"],
+textarea,
+select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 60px;
+}
+
+.submit-section {
+  text-align: center;
+}
+
+button {
+  background-color: #E30175;
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #c10063;
+}
+
+.success-message {
+  margin-top: 20px;
+  color: green;
+  text-align: center;
+  font-weight: bold;
+}

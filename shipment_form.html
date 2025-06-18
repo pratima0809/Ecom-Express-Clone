@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shipment Booking Form</title>
+  <link rel="stylesheet" href="/shipment_form.css">
+  <!-- <link rel="stylesheet" href="/style.css"> -->
+</head>
+<body style="background-color: rgb(84, 84, 84); margin:0;">
+    <section id="navbar">
+        <a href="/index.html"><img src="/Assets/logo.a5977302.svg" alt="logo"></a>
+        <ul id="list1">
+            <li>Services</li>
+            <li>Company</li>
+            <li>Media Center</li>
+            <li>Investor Relations</li>
+        </ul>
+        <ul id="list2">
+            <li>For Customers</li>
+            <li>For Delivery Partners</li>
+        </ul>
+    </section>
+
+<div class="form-container">  
+  <h2>📦 Book Your Shipment</h2>
+
+  <form id="shipmentForm">
+    <!-- Shipper -->
+    <fieldset>
+      <legend>Shipper Details</legend>
+      <label>Name: <input type="text" name="shipperName" required></label>
+      <label>Contact: <input type="tel" name="shipperContact" required></label>
+      <label>Address:
+        <select name="shipperAddress" id="shipperAddress" required>
+            <option value="">Select Origin</option>
+        </select>
+      </label>
+    </fieldset>
+
+    <!-- Receiver -->
+    <fieldset>
+      <legend>Receiver Details</legend>
+      <label>Name: <input type="text" name="receiverName" required></label>
+      <label>Contact: <input type="tel" name="receiverContact" required></label>
+      <label>Address:
+        <select name="receiverAddress" id="receiverAddress" required>
+            <option value="">Select Destination</option>
+        </select>
+      </label>
+    </fieldset>
+
+    <!-- Package -->
+    <fieldset>
+      <legend>Package Info</legend>
+      <label>Weight (kg): <input type="number" name="weight" step="0.1" required></label>
+      <label>Package Type:
+        <select name="packageType" required>
+          <option value="">Select</option>
+          <option>Document</option>
+          <option>Parcel</option>
+          <option>Fragile</option>
+        </select>
+      </label>
+      <label>COD Amount (₹): <input type="number" name="codAmount" min="0"></label>
+    </fieldset>
+
+    <!-- Payment -->
+    <fieldset>
+      <legend>Payment Mode</legend>
+      <label><input type="radio" name="paymentMode" value="Prepaid" required> Prepaid</label>
+      <label><input type="radio" name="paymentMode" value="COD" required> COD</label>
+    </fieldset>
+
+    <!-- Submit -->
+    <div class="submit-section">
+      <button type="submit">🚀 Book Shipment</button>
+    </div>
+  </form>
+
+  <div id="formSuccess" class="success-message"></div>
+</div>
+
+<script src="/shipment_form.js"></script>
+</body>
+</html>

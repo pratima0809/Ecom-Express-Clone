@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shipment Status</title>
+        <link rel="stylesheet" href="/shipment-tracking.css">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body style="background-color: rgb(81, 81, 81);padding:0">
+        <!-- NAVIGATION BAR -->
+        <section id="navbar">
+            <a href="/index.html"><img src="/Assets/logo.a5977302.svg" alt="logo"></a>
+            <ul id="list1">
+                <li>Services</li>
+                <li>Company</li>
+                <li>Media Center</li>
+                <li>Investor Relations</li>
+            </ul>
+            <ul id="list2">
+                <li>For Customers</li>
+                <li>For Delivery Partners</li>
+            </ul>
+        </section>
+        <marquee loop="-1">Ecom Express does not sell consumer products physically or online, offer franchises, operate payment gateways, or benefit from any payments made through such gateways or wallets. Beware of fraudulent claims and invoices. Trust only official communication from the domain ecomexpress.in, messages from other sources are illegitimate.</marquee>
+        <section id="shipment-body">
+            <section class="tracking-info">
+            <div class="search-bar">
+                <input type="text" id="awbInput" placeholder="Enter AWB Number" value="" />
+                <button onclick="trackShipment()">
+                🔍
+                </button>
+            </div>
+
+
+            <!-- LEFT SIDE -->
+
+
+            <div class="status-card">
+                <div class="update-info">
+                <div>
+                    <p>Last Updated</p>
+                    <strong>Monday</strong>
+                </div>
+                <div class="calendar-icon">📦🔁</div>
+                </div>
+
+                <div class="date">
+                    <h1 id="current-day">--</h1>
+                    <p id="current-date">/ -- / ----</p>
+                </div>
+
+                <div class="shipment-status delivered">
+                <span class="truck-icon">🚚</span>
+                <span id="status">Delivery in Progress</span>
+                </div>
+
+                <div class="info-request">
+                Information request: <strong>28 Jul, 2023 09:57 hrs</strong>
+                </div>
+
+                <div class="details-row">
+                <div>
+                    <strong>Order No.:</strong> <span class="highlight">968458361957_1_vjb</span>
+                </div>
+                <div>
+                    <strong>AWB Number:</strong> <span class="highlight" id="awbNo">9906657212</span>
+                </div>
+                </div>
+
+                <div class="query-box">
+                For any queries Call us 📞 <strong>+91-8376888888</strong> <br />
+                <small>(from 8:00am to 10:00pm)</small>
+                </div>
+            </div>
+            </section>
+
+            <!-- RIGHT SIDE -->
+
+
+            <section class="timeline-container">
+            <h3>Tracking ID</h3>
+            <p class="tracking-id">9906657212</p>
+
+            <div class="timeline">
+                <!-- Timeline items -->
+                <div class="timeline-item">
+                <div class="timeline-icon done">✔️</div>
+                <div class="timeline-content">
+                    <h4>Pickup Completed</h4>
+                    <p>📍 <span id="pickupLocation">--</span> | Date: 28 Jul, 2023 14:52 hrs</p>
+                </div>
+                </div>
+
+                <div class="timeline-item">
+                <div class="timeline-icon done">✔️</div>
+                <div class="timeline-content">
+                    <h4>Shipment at Delivery Centre</h4>
+                    <p>📍 <span id="deliveryCentre">--</span> | Date: 30 Jul, 2023 18:17 hrs</p>
+                </div>
+                </div>
+
+                <div class="timeline-item">
+                <div class="timeline-icon done">✔️</div>
+                <div class="timeline-content">
+                    <h4>Out for Delivery</h4>
+                    <p>📍 <span id="outForDelivery">--</span> | Date: 31 Jul, 2023 06:44 hrs</p>
+                </div>
+                </div>
+
+                <div class="timeline-item">
+                <div class="timeline-icon done">✔️</div>
+                <div class="timeline-content">
+                    <h4>Shipment Delivered</h4>
+                    <p>📍 <span id="shipmentDelivered">--</span> | Date: 31 Jul, 2023 07:57 hrs</p>
+                </div>
+                </div>
+            </div>
+            </section>
+        </section>
+
+        <!-- FOOTER LINKS -->
+
+        <section id="footer_links" style="background-color: rgb(0, 0, 0);">
+                <div class="links">
+                    <h3 class="link_headings">About Us</h3>
+                    <span><a href="/">About Ecom Express</a></span>
+                    <span><a href="/">Corporate Values</a></span>
+                    <span><a href="/">Our Journey</a></span>
+                    <span><a href="/">Team</a></span>
+                    <span><a href="/">Career</a></span>
+                    <span><a href="/">CSR</a></span>
+                    <span><a href="/">Awards & Recognition</a></span>
+                </div>
+
+                <div class="links">
+                    <h3 class="link_headings">Services</h3>
+                    <span><a href="/">Shipping Services</a></span>
+                    <span><a href="/">Fulfillment Services</a></span>
+                    <span></span>
+                    <h3 class="link_headings">Developers</h3>
+                    <span><a href="/">API reference</a></span>
+                </div>
+
+                <div class="links">
+                    <h3 class="link_headings">Corporate Office</h3>
+                    <span>10th Floor, Ambience Tower II,<br>Ambience Island, Gurugram - 122002<br>Haryana</span>
+                    <span></span>
+                    <h3 class="link_headings">Registered Office</h3>
+                    <span>Ground Floor, 13/16 min, 17 min,<br>Samalka, Old Delhi-Gurugram Road,<br>Kapashera, New Delhi – 110037</span>
+                </div>
+
+                <div class="links">
+                    <h3 class="link_headings">CIN Number:</h3>
+                    <span>U63000DL2012PLC241107</span>
+                    <span></span>
+                    <span></span>
+                    <h3 class="link_headings">Follow us on</h3>
+                    <div id="smhandles" style="display: flex; justify-content:space-between">
+                        <span><a href="https://www.facebook.com/EcomExpressLimited" target="_blank"><img src="/Assets/footerlinks/fb.svg" width="40"></a></span>
+                        <span><a href="https://www.linkedin.com/company/ecom-express-ltd/" target="_blank"><img src="/Assets/footerlinks/linkedin.svg" width="40"></a></span>
+                        <span><a href="https://x.com/EcomExpress_Ofc" target="_blank"><img src="/Assets/footerlinks/twitter.svg" width="40"></a></span>
+                        <span><a href="https://www.instagram.com/ecomexpressltd/" target="_blank"><img src="/Assets/footerlinks/ig.svg" width="40"></a></span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="copyright" style="padding-left: 200px;background-color: black">
+                <div>For Educational Purpose Only</div>
+                <div id="copyright_links" style="display: flex;">
+                    <a href="/" style="color:#E30175; padding-right: 20px; text-decoration:none">Disclaimer</a>
+                    <a href="/" style="color:#E30175; padding-right: 20px; text-decoration:none">Privacy Policy</a>
+                    <a href="/" style="color:#E30175; padding-right: 20px; text-decoration:none">Cookie Policy</a>
+                    <a href="/" style="color:#E30175; padding-right: 20px; text-decoration:none">Fraud Detection Guidelines</a>
+                </div>
+            </section>
+        </footer>
+    <script src="/script.js"></script>    
+    <script src="/shipment-tracking.js"></script>
+    </body>
+</html>
